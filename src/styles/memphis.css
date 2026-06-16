@@ -1,0 +1,144 @@
+.poster-grid::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  opacity: 0.4;
+  background-image:
+    linear-gradient(45deg, transparent 0 47%, rgba(37, 35, 31, 0.07) 47% 53%, transparent 53%),
+    radial-gradient(circle, rgba(37, 35, 31, 0.16) 1.5px, transparent 1.8px);
+  background-position: 0 0, 10px 10px;
+  background-size: 96px 96px, 22px 22px;
+  pointer-events: none;
+}
+
+.memphis-shape {
+  position: absolute;
+  z-index: 1;
+  display: block;
+  pointer-events: none;
+}
+
+.memphis-shape.dots {
+  width: 154px;
+  height: 112px;
+  background-image: radial-gradient(circle, var(--ink) 2.5px, transparent 3px);
+  background-size: 18px 18px;
+  opacity: 0.28;
+}
+
+.memphis-shape.sun {
+  width: 132px;
+  height: 132px;
+  border: 3px solid var(--ink);
+  border-radius: 50%;
+  background:
+    repeating-conic-gradient(from 0deg, var(--mustard) 0 10deg, transparent 10deg 20deg),
+    var(--cream-deep);
+}
+
+.memphis-shape.squiggle {
+  width: 190px;
+  height: 58px;
+  background:
+    radial-gradient(ellipse at center, transparent 45%, var(--ink) 47% 52%, transparent 54%) 0 0 / 66px 58px repeat-x;
+  opacity: 0.35;
+  transform: rotate(-8deg);
+}
+
+.memphis-shape.checker {
+  width: 142px;
+  height: 102px;
+  border: 3px solid var(--ink);
+  background-color: var(--paper);
+  background-image:
+    linear-gradient(45deg, var(--green) 25%, transparent 25%),
+    linear-gradient(-45deg, var(--green) 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, var(--green) 75%),
+    linear-gradient(-45deg, transparent 75%, var(--green) 75%);
+  background-position: 0 0, 0 26px, 26px -26px, -26px 0;
+  background-size: 52px 52px;
+  opacity: 0.5;
+  transform: rotate(8deg);
+}
+
+.shape-one {
+  right: 38%;
+  bottom: 26px;
+}
+
+.shape-two {
+  top: 26px;
+  right: 34px;
+}
+
+.shape-three {
+  left: 42%;
+  top: 48px;
+}
+
+.home-note-card,
+.project-card,
+.research-section-card,
+.media-card,
+.abstract-section,
+.citation-card,
+.video-section {
+  position: relative;
+}
+
+.project-card::after,
+.research-section-card::after {
+  content: '';
+  position: absolute;
+  right: 18px;
+  bottom: 18px;
+  width: 56px;
+  height: 14px;
+  background: repeating-linear-gradient(90deg, var(--ink) 0 4px, transparent 4px 10px);
+  opacity: 0.18;
+  transform: rotate(-8deg);
+}
+
+.abstract-section::before,
+.video-section::before {
+  content: '';
+  position: absolute;
+  width: 58px;
+  height: 58px;
+  border: 3px solid var(--ink);
+  border-radius: 50%;
+  opacity: 0.72;
+  transform: rotate(10deg);
+}
+
+.abstract-section::before {
+  top: -20px;
+  right: 32px;
+  background: var(--mustard);
+}
+
+.video-section::before {
+  left: -16px;
+  bottom: -16px;
+  background: var(--mint);
+}
+
+@media (max-width: 760px) {
+  .memphis-shape {
+    opacity: 0.24;
+  }
+
+  .shape-one {
+    right: 10px;
+    bottom: 18px;
+  }
+
+  .shape-two {
+    top: 16px;
+    right: 16px;
+  }
+
+  .shape-three {
+    display: none;
+  }
+}
