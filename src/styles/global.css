@@ -392,6 +392,25 @@ h3 {
   color: rgba(37, 35, 31, 0.48);
 }
 
+.compact-actions {
+  max-width: 540px;
+}
+
+.button-row-break {
+  flex-basis: 100%;
+  width: 0;
+  height: 0;
+}
+
+.compact-actions .button:nth-child(4) {
+  margin-left: 0;
+}
+
+.compact-actions .button:nth-of-type(4),
+.compact-actions .button:nth-of-type(5) {
+  background: var(--mint);
+}
+
 .button {
   display: inline-flex;
   align-items: center;
@@ -447,7 +466,7 @@ h3 {
 
 .paper-header h1 {
   max-width: 100%;
-  font-size: clamp(2.55rem, 4.1vw, 4.45rem);
+  font-size: clamp(2.4rem, 3.72vw, 4rem);
   line-height: 1.02;
 }
 

@@ -1,3 +1,4 @@
+import { Fragment } from 'react';
 import { motion, type MotionProps } from 'framer-motion';
 import { CitationBlock } from '../components/CitationBlock';
 import { FigureCarousel } from '../components/FigureCarousel';
@@ -29,7 +30,10 @@ export function PdsJoint() {
           <p className="paper-summary">{pdsJoint.summary}</p>
           <div className="hero-actions compact-actions">
             {pdsJoint.links.map((link, index) => (
-              <LinkButton key={link.label} {...link} variant={index === 0 ? 'primary' : 'secondary'} />
+              <Fragment key={link.label}>
+                {index === 3 ? <span className="button-row-break" aria-hidden="true" /> : null}
+                <LinkButton {...link} variant={index === 0 ? 'primary' : 'secondary'} />
+              </Fragment>
             ))}
           </div>
         </div>

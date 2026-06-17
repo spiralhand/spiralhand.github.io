@@ -42,7 +42,7 @@ npm run build
 - `status`：卡片左上角状态标签，例如 `IROS 2026`
 - `href`：点击卡片标题进入的页面路由
 - `image`：首页卡片左侧图片路径
-- `links`：卡片底部链接按钮，例如 Project page / Paper / Video / Code
+- `links`：卡片底部链接按钮，例如 Project page / Paper / Video / CAD / PCB
 
 如果以后要增加新的 Spiral Hand 子项目，在 `siteProjects` 数组里再加一个对象即可。
 
@@ -95,9 +95,16 @@ About Us 按钮会跳转到 `#/about`。About Us 页面内容来自 `src/content
 
 如果要换年份、组织名或版权说明，在这两个文件里搜索这句话即可。
 
-## 图片、视频、PDF 放在哪里
+## 图片、视频、PDF、CAD、PCB 放在哪里
 
-所有公开资源都放在：`public/assets/pds/`
+网站直接使用的 PDF、视频和图片放在：`public/assets/pds/`
+
+硬件开源资料放在仓库根目录：
+
+- CAD 模型：`CAD/`
+- PCB 资料：`PCB/`
+
+PDS 页面顶部按钮中的 `CAD` 和 `PCB` 会跳转到 GitHub 仓库里的这两个目录。
 
 ### PDF 和视频
 
@@ -110,7 +117,7 @@ About Us 按钮会跳转到 `#/about`。About Us 页面内容来自 `src/content
 
 - PDF 链接：`src/content/pdsJoint.ts` 里的 `pdsJoint.links`
 - 视频路径：`src/content/pdsJoint.ts` 里的 `pdsJoint.video`
-- 首页项目卡片里的 Paper / Video 链接：`src/content/site.ts` 里的 `siteProjects[...].links`
+- 首页项目卡片里的 Paper / Video / CAD / PCB 链接：`src/content/site.ts` 里的 `siteProjects[...].links`
 
 ### PDS 图片文件
 
@@ -288,6 +295,4 @@ npm run build
 © 2026 Spiral Hand. All rights reserved.
 ```
 
-目前没有单独添加开源 `LICENSE` 文件。原因是这个仓库现在主要是项目展示网站，不一定代表代码、CAD、数据集或硬件设计已经开放授权。
-
-如果之后要公开代码、CAD 文件、数据集或硬件设计，建议新增明确的 `LICENSE` 文件，并在 README 中说明 license 覆盖哪些内容。
+仓库中已经包含 `LICENSE` 文件，目前使用 Apache License 2.0。CAD 和 PCB 资料作为本仓库的开源硬件相关资料一并发布。

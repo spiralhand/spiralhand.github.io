@@ -14,7 +14,7 @@ export type MediaItem = {
 
 export const pdsJoint = {
   title: 'PDS Joint: A Parametric Double-Spiral Joint Tailored for Dexterous Hands',
-  titleLines: ['PDS Joint: A Parametric Double-Spiral', 'Joint for Dexterous Hands'],
+  titleLines: ['PDS Joint: A Parametric Double-Spiral', 'Joint Tailored for Dexterous Hands'],
   shortTitle: 'PDS Joint',
   venue: 'IROS 2026',
   authors: ['Haoyang Li', 'Yibo Wen', 'Yiheng Xu', 'Yixiang Fan', 'Yufeng Yue*'],
@@ -27,7 +27,8 @@ export const pdsJoint = {
     { label: 'Paper PDF', href: '/assets/pds/paper.pdf' },
     { label: 'Video', href: '#/projects/pds-joint#video' },
     { label: 'BibTeX', href: '#/projects/pds-joint#citation' },
-    { label: 'Code', href: '#', status: 'coming-soon' as const },
+    { label: 'CAD', href: 'https://github.com/spiralhand/spiralhand.github.io/tree/main/CAD' },
+    { label: 'PCB', href: 'https://github.com/spiralhand/spiralhand.github.io/tree/main/PCB' },
   ] satisfies ProjectLink[],
   figures: {
     overview: '/assets/pds/figures/hero.png',

@@ -49,7 +49,8 @@ export const siteProjects: SiteProject[] = [
       { label: 'Project page', href: '#/projects/pds-joint' },
       { label: 'Paper', href: '/assets/pds/paper.pdf' },
       { label: 'Video', href: '#/projects/pds-joint#video' },
-      { label: 'Code', href: '#', disabled: true },
+      { label: 'CAD', href: 'https://github.com/spiralhand/spiralhand.github.io/tree/main/CAD' },
+      { label: 'PCB', href: 'https://github.com/spiralhand/spiralhand.github.io/tree/main/PCB' },
     ],
   },
 ];
