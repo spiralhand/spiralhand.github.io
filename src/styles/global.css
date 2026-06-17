@@ -80,7 +80,7 @@ main {
   min-height: 70px;
   align-items: center;
   justify-content: space-between;
-  gap: clamp(34px, 6vw, 96px);
+  gap: clamp(22px, 4vw, 56px);
   padding: 12px 22px;
   border: var(--line);
   border-radius: 999px;
@@ -132,8 +132,8 @@ main {
   display: flex;
   flex: 1;
   justify-content: center;
-  gap: clamp(34px, 5.6vw, 76px);
-  padding: 0 clamp(18px, 3vw, 42px);
+  gap: clamp(24px, 4vw, 54px);
+  padding: 0 clamp(10px, 2vw, 24px);
 }
 
 .site-nav nav a,
@@ -142,6 +142,7 @@ main {
   padding: 12px 20px;
   font-size: 1.15rem;
   font-weight: 800;
+  white-space: nowrap;
 }
 
 .site-nav nav a:hover,
@@ -151,6 +152,7 @@ main {
 
 .nav-paper {
   display: inline-flex;
+  flex-shrink: 0;
   align-items: center;
   gap: 4px;
   border: 2px solid var(--ink);
@@ -454,20 +456,27 @@ h3 {
 }
 
 .paper-header {
+  container-type: inline-size;
   min-height: 620px;
   grid-template-columns: 1fr;
   padding: clamp(28px, 5vw, 58px);
 }
 
 .paper-title-block {
-  max-width: 100%;
+  max-width: min(100%, 980px);
   padding-bottom: clamp(170px, 23vw, 280px);
 }
 
 .paper-header h1 {
   max-width: 100%;
-  font-size: clamp(2.4rem, 3.72vw, 4rem);
-  line-height: 1.02;
+  font-size: clamp(2.25rem, 3vw, 3.35rem);
+  line-height: 1.03;
+}
+
+@supports (font-size: 1cqw) {
+  .paper-header h1 {
+    font-size: clamp(2.25rem, 5.05cqw, 3.35rem);
+  }
 }
 
 .paper-header h1 span {
