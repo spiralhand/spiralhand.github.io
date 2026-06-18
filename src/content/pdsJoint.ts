@@ -25,8 +25,8 @@ export const pdsJoint = {
   keywords: ['Compliant joint', 'Dexterous hand', 'Spiral mechanism', 'Proprioception', 'Inductive sensing'],
   links: [
     { label: 'Paper PDF', href: '/assets/pds/paper.pdf' },
-    { label: 'Video', href: '#/projects/pds-joint#video' },
-    { label: 'BibTeX', href: '#/projects/pds-joint#citation' },
+    { label: 'Video', href: '/projects/pds-joint#video' },
+    { label: 'BibTeX', href: '/projects/pds-joint#citation' },
     { label: 'CAD', href: 'https://github.com/spiralhand/spiralhand.github.io/tree/main/CAD' },
     { label: 'PCB', href: 'https://github.com/spiralhand/spiralhand.github.io/tree/main/PCB' },
   ] satisfies ProjectLink[],

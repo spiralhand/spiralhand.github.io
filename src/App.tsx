@@ -5,25 +5,11 @@ import { Home } from './pages/Home';
 import { PdsJoint } from './pages/PdsJoint';
 
 function parseRoute() {
-  const hash = window.location.hash.replace(/^#/, '');
-  if (!hash.startsWith('/')) {
-    return '/';
-  }
-
-  return hash.split('?')[0].split('#')[0] || '/';
+  return window.location.pathname || '/';
 }
 
 function parseAnchor() {
-  const hash = window.location.hash.replace(/^#/, '');
-  if (!hash) {
-    return undefined;
-  }
-
-  if (!hash.startsWith('/')) {
-    return hash;
-  }
-
-  return hash.split('#')[1];
+  return window.location.hash.replace(/^#/, '') || undefined;
 }
 
 export default function App() {
@@ -42,9 +28,13 @@ export default function App() {
       }, 0);
     };
 
+    window.addEventListener('popstate', updateRoute);
     window.addEventListener('hashchange', updateRoute);
     updateRoute();
-    return () => window.removeEventListener('hashchange', updateRoute);
+    return () => {
+      window.removeEventListener('popstate', updateRoute);
+      window.removeEventListener('hashchange', updateRoute);
+    };
   }, []);
 
   const Page = route === '/projects/pds-joint' ? PdsJoint : route === '/about' ? About : Home;

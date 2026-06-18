@@ -93,7 +93,7 @@ export function PdsJoint() {
       <CitationBlock citation={pdsJoint.citation} />
 
       <footer className="site-footer">
-        <a href="#/">Back to Spiral Hand</a>
+        <a href="/">Back to Spiral Hand</a>
         <span>© 2026 Spiral Hand. All rights reserved.</span>
       </footer>
     </div>

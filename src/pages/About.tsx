@@ -38,7 +38,7 @@ export function About() {
       </section>
 
       <footer className="site-footer">
-        <a href="#/">Back to {siteInfo.name}</a>
+        <a href="/">Back to {siteInfo.name}</a>
         <span>© 2026 Spiral Hand. All rights reserved.</span>
       </footer>
     </div>

@@ -43,12 +43,12 @@ export const siteProjects: SiteProject[] = [
     description:
       'Inspired by fern fronds, we proposed a parametric double-spiral compliant joint for dexterous hands, including joint geometry, stiffness tuning, embedded inductive sensing, calibration, and hand-level demonstrations.',
     status: 'IROS 2026',
-    href: '#/projects/pds-joint',
+    href: '/projects/pds-joint',
     image: '/assets/pds/figures/hero.png',
     links: [
-      { label: 'Project page', href: '#/projects/pds-joint' },
+      { label: 'Project page', href: '/projects/pds-joint' },
       { label: 'Paper', href: '/assets/pds/paper.pdf' },
-      { label: 'Video', href: '#/projects/pds-joint#video' },
+      { label: 'Video', href: '/projects/pds-joint#video' },
       { label: 'CAD', href: 'https://github.com/spiralhand/spiralhand.github.io/tree/main/CAD' },
       { label: 'PCB', href: 'https://github.com/spiralhand/spiralhand.github.io/tree/main/PCB' },
     ],
