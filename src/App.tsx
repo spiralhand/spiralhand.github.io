@@ -5,7 +5,8 @@ import { Home } from './pages/Home';
 import { PdsJoint } from './pages/PdsJoint';
 
 function parseRoute() {
-  return window.location.pathname || '/';
+  const path = window.location.pathname || '/';
+  return path !== '/' ? path.replace(/\/$/, '') : path;
 }
 
 function parseAnchor() {
