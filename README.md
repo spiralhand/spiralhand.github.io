@@ -16,7 +16,7 @@ The PDS Joint work is inspired by fern fronds and proposes a parametric double-s
 ## Resources
 
 - Project page: https://spiralhand.github.io/projects/pds-joint
-- Paper PDF: https://spiralhand.github.io/assets/pds/paper.pdf
+- Paper PDF: https://arxiv.org/pdf/2606.24377
 - Video: https://spiralhand.github.io/projects/pds-joint#video
 - CAD models: [CAD/](CAD/)
 - PCB materials: [PCB/](PCB/)
@@ -26,7 +26,7 @@ The PDS Joint work is inspired by fern fronds and proposes a parametric double-s
 ```text
 CAD/                     CAD model files
 PCB/                     PCB and embedded hardware-related materials
-public/assets/pds/       Paper PDF, project video, and website figures
+public/assets/pds/       Project video and website figures
 src/                     Website source files
 ```
 

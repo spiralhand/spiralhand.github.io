@@ -47,7 +47,7 @@ export const siteProjects: SiteProject[] = [
     image: '/assets/pds/figures/hero.png',
     links: [
       { label: 'Project page', href: '/projects/pds-joint' },
-      { label: 'Paper', href: '/assets/pds/paper.pdf' },
+      { label: 'Paper', href: 'https://arxiv.org/pdf/2606.24377' },
       { label: 'Video', href: '/projects/pds-joint#video' },
       { label: 'CAD', href: 'https://github.com/spiralhand/spiralhand.github.io/tree/main/CAD' },
       { label: 'PCB', href: 'https://github.com/spiralhand/spiralhand.github.io/tree/main/PCB' },
