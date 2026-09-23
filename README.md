@@ -42,7 +42,7 @@ Team affiliation: School of Automation, Beijing Institute of Technology
 
 ## Contact
 
-- Haoyang Li: bithaoyangli@163.com
+- Haoyang Li: haoyangli12138@163.com
 - Yibo Wen: wenyibo1105@gmail.com
 - Yiheng Xu: xyh15523@gmail.com
 - Yixiang Fan: fanyixiang318@gmail.com

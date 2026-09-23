@@ -28,7 +28,7 @@ export const aboutInfo = {
     'We are a research team working on dexterous robotic hands, compliant mechanisms, and proprioception. Welcome to join our journey!',
   affiliation: 'School of Automation, Beijing Institute of Technology',
   members: [
-    { name: 'Haoyang Li', email: 'bithaoyangli@163.com' },
+    { name: 'Haoyang Li', email: 'haoyangli12138@163.com' },
     { name: 'Yibo Wen', email: 'wenyibo1105@gmail.com' },
     { name: 'Yiheng Xu', email: 'xyh15523@gmail.com' },
     { name: 'Yixiang Fan', email: 'fanyixiang318@gmail.com' },
