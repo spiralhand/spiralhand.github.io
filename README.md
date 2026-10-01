@@ -6,8 +6,9 @@ Project website: https://spiralhand.github.io/
 
 ## PDS Joint
 
-**PDS Joint: A Parametric Double-Spiral Joint Tailored for Dexterous Hands**  
-IROS 2026
+**PDS Joint: A Parametric Double-Spiral Joint Tailored for Dexterous Hands**
+
+IROS 2026 · [IROS Best Paper Award on Robot Mechanisms and Design](https://2026.ieee-iros.org/program/contributed_talks/#002d41:3543) — Award Candidate
 
 This work studies a parametric double-spiral compliant joint for dexterous hands, including joint geometry, stiffness tuning, embedded inductive sensing, calibration, and hand-level demonstrations.
 

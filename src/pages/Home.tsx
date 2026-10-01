@@ -65,6 +65,12 @@ export function Home() {
               <div className="project-card-body">
                 <div className="project-card-meta">
                   <span>{project.status}</span>
+                  {project.award ? (
+                    <a className="award-badge" href={project.award.href}>
+                      <span>{project.award.name}</span>
+                      <strong>{project.award.status}</strong>
+                    </a>
+                  ) : null}
                 </div>
                 <h3>
                   <a href={project.href}>{project.title}</a>

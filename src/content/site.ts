@@ -3,6 +3,11 @@ export type SiteProject = {
   subtitle: string;
   description: string;
   status: string;
+  award?: {
+    name: string;
+    status: string;
+    href: string;
+  };
   href: string;
   image: string;
   links: Array<{
@@ -43,6 +48,11 @@ export const siteProjects: SiteProject[] = [
     description:
       'Inspired by fern fronds, we proposed a parametric double-spiral compliant joint for dexterous hands, including joint geometry, stiffness tuning, embedded inductive sensing, calibration, and hand-level demonstrations.',
     status: 'IROS 2026',
+    award: {
+      name: 'IROS Best Paper Award on Robot Mechanisms and Design',
+      status: 'Award Candidate',
+      href: 'https://2026.ieee-iros.org/program/contributed_talks/#002d41:3543',
+    },
     href: '/projects/pds-joint',
     image: '/assets/pds/figures/hero.png',
     links: [

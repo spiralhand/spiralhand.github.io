@@ -17,6 +17,11 @@ export const pdsJoint = {
   titleLines: ['PDS Joint: A Parametric Double-Spiral', 'Joint Tailored for Dexterous Hands'],
   shortTitle: 'PDS Joint',
   venue: 'IROS 2026',
+  award: {
+    name: 'IROS Best Paper Award on Robot Mechanisms and Design',
+    status: 'Award Candidate',
+    href: 'https://2026.ieee-iros.org/program/contributed_talks/#002d41:3543',
+  },
   authors: ['Haoyang Li', 'Yibo Wen', 'Yiheng Xu', 'Yixiang Fan', 'Yufeng Yue*'],
   summary:
     'This work studies a parametric double-spiral compliant joint for dexterous hands, including joint geometry, stiffness tuning, embedded inductive sensing, calibration, and hand-level demonstrations.',

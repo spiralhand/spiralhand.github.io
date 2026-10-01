@@ -20,7 +20,13 @@ export function PdsJoint() {
         <MemphisShape variant="dots" className="shape-one" />
         <MemphisShape variant="checker" className="shape-two" />
         <div className="paper-title-block">
-          <p className="venue-badge">{pdsJoint.venue}</p>
+          <div className="paper-badge-row">
+            <p className="venue-badge">{pdsJoint.venue}</p>
+            <a className="award-badge" href={pdsJoint.award.href}>
+              <span>{pdsJoint.award.name}</span>
+              <strong>{pdsJoint.award.status}</strong>
+            </a>
+          </div>
           <h1>
             {pdsJoint.titleLines.map((line) => (
               <span key={line}>{line}</span>
